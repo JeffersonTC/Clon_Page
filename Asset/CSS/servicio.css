@@ -1,0 +1,558 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  background: linear-gradient(#151434, #302e72, #3e3b9a00);
+}
+
+.logo {
+  margin: 50px 10px;
+  position: relative;
+  left: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+
+}
+
+#logo_image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.no-space {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.titulo {
+  display: block;
+  position: relative;
+  left: 40px;
+  top: 40px;
+  margin: 10px;
+  color: #fff;
+}
+
+.titulo h1 {
+  font-size: 40px;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.nav_menu ul {
+  display: flex;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  left: 400px;
+  top: 30px;
+}
+
+.nav_menu li {
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nav_menu li a:hover {
+  color: red;
+  transition: color 1s;
+
+}
+
+.nav_menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.img_service {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.text_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  margin: auto;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.75;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+
+.img_service img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 610px;
+
+}
+
+
+.servicio {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  color: #ed1250;
+  ;
+}
+
+p {
+  display: block;
+  text-align: center;
+}
+
+/*estas son las cartas con efecto 3d*/
+
+.flip_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+}
+
+.card {
+  width: 270px;
+  height: 600px;
+  position: relative;
+  transition: transform .8s;
+  transform-style: preserve-3d;
+  margin: 10px 15px;
+  cursor: auto;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: #ED1250 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 4px;
+
+}
+
+
+
+.front {
+  background-color: #fff;
+  z-index: 10;
+  backface-visibility: hidden;
+  transition: .4s ease-in-out;
+}
+
+.back {
+  background-color: #fff;
+  z-index: 2;
+  transform: rotateY(180deg);
+  transition: .4s ease-in-out;
+  background-color: #151434;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+
+}
+
+.logo_card {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  top: 70px;
+  overflow: hidden;
+  z-index: 100;
+
+}
+
+.logo_card img {
+  width: 100%;
+}
+
+
+.front_title {
+  text-align: center;
+  margin: 20px;
+  align-items: center;
+}
+
+.back p {
+  width: 200px;
+  height: 200px;
+  margin: 25px;
+  line-height: 1.75;
+  margin: auto;
+  color: #fff;
+  font-size: inherit;
+}
+
+/*carrusel de imagenes de industria*/
+.industria_container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.industria {
+  width: 75%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.7;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+.industria h2 {
+  margin: 20px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ed1250;
+}
+
+.container_btn {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  margin: 20px 0;
+}
+
+.container_btn button {
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 45px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #ed1250;
+  color: #fff;
+  border: 1px transparent;
+  font-size: smaller;
+}
+
+/*Aqui empieza el carrusel */
+.carrusel_slider {
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.slider_img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin-left: 0px;
+}
+
+.slider_img ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  margin-left: 0;
+  padding-left: 0;
+  animation: movimientos_slider 16s infinite linear;
+}
+
+.slider_img ul:hover {
+  animation-play-state: paused;
+}
+
+.slider_img ul img {
+  margin: 0px 20px 0px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+@keyframes movimientos_slider {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translate(calc(-600px *6));
+  }
+
+}
+
+/*Aqui empieza la secion del video*/
+
+.video_container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  margin-right: 80px;
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 90px 5px 0px 0px rgba(237, 18, 80, 1);
+}
+
+.video video {
+  width: 100%;
+}
+
+.title_video {
+  width: 500px;
+  height: 400px;
+  text-align: center;
+}
+
+.title_video h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ed1250;
+  text-transform: uppercase;
+}
+
+.title_video p {
+  color: #151434;
+  line-height: 1.75;
+}
+
+/*Aqui empieza la carta de 3D de alianza*/
+.Alianza {
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ed1250;
+  font-weight: 500;
+}
+
+.container_cartas_3D {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.card_3D {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transition: transform .8s;
+  transform-style: preserve-3d;
+  margin: 10px 15px;
+  cursor: auto;
+  border: 2px solid transparent;
+}
+
+.front_3D {
+  background-color: #ffffff;
+  z-index: 10;
+  backface-visibility: hidden;
+  transition: .4s ease-in-out;
+}
+
+.front_3D img {
+  margin: auto;
+}
+
+.back_3D {
+  z-index: 2;
+  transform: rotateY(180deg);
+  transition: .4s ease-in-out;
+  background-color: #151434;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.75;
+  text-align: center;
+  border: 1px transparent;
+}
+
+.back_3D p {
+  padding: 17px;
+}
+
+.card_3D:hover {
+  transform: rotateY(180deg);
+}
+
+.front_3D,
+.back_3D {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+  position: absolute;
+  border: 2px transparent solid;
+}
+
+/*aqui empieza los contactos en la seccion de servicio*/
+.container_contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin-top: 120px;
+}
+
+.btn_logo {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+
+.btn_logo img {
+  display: flex;
+  margin: auto;
+
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  left: 40px;
+  margin: 10px;
+  align-items: center;
+  border: solid transparent;
+  border-radius: 10px;
+  background-color: #ed1250;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: .5s ease all;
+
+}
+
+.btn p {
+  z-index: 20;
+  transition: 5s ease all;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn_logo a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #151434;
+  position: absolute;
+  right: 200px;
+  transition: .5s ease-in-out all;
+}
+
+.btn:hover::after {
+  right: 0;
+  transition: .5s ease all;
+}
+
+.btn_logo a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 100;
+  border: transparent;
+}
+
+.phone,
+.email,
+.location {
+  margin: 25px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone a {
+  text-decoration: none;
+  color: #151434;
+  margin-left: 15px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.email a {
+  text-decoration: none;
+  color: #151434;
+  margin-left: 15px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+
+}
+
+.location p {
+  margin-left: 15px;
+
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  color: #ffffff;
+  background-color: #ed1250;
+  justify-content: center;
+  display: flex;
+
+
+}
+
+footer p {
+  margin: auto;
+
+}
