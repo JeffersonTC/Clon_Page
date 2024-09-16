@@ -335,6 +335,7 @@ header {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+ 
 
 }
 
@@ -383,7 +384,7 @@ header {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
-  z-index: 100;
+  z-index: 30;
   border: transparent;
 }
 
