@@ -541,6 +541,17 @@ p {
 
 }
 
+.icon_decoration {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 7px;
+}
+
+.icon_decoration img {
+  width: 100%;
+}
+
 footer {
   width: 100%;
   height: 80px;
