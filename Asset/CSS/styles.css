@@ -696,7 +696,6 @@ a:hover::after {
   margin-left: 0;
   overflow: hidden;
   margin-right: 20px;
-  border: solid;
 
 }
 
@@ -721,7 +720,7 @@ a:hover::after {
   font-size: 0;
   background-color: #d6dbdf;
 }
-.client_button button:hover{
 
-  background-color:#aeb6bf  ;
+.client_button button:hover {
+  background-color: #aeb6bf;
 }
