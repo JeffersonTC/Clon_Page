@@ -335,7 +335,7 @@ header {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
- 
+
 
 }
 
@@ -570,9 +570,11 @@ header {
   height: 100%;
   transition: .4s ease-in-out;
 }
-.image_blog img:hover{
+
+.image_blog img:hover {
   transform: scale(1.1);
 }
+
 .form_date {
   color: #ed1250;
   display: flex;
@@ -582,19 +584,19 @@ header {
   padding: 30px;
 }
 
-.form_date input{
-  display: flex; 
-  flex-direction: column; 
+.form_date input {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   cursor: pointer;
-  
+
 }
 
 .form_date input[type="date"] {
-  border: 1px solid #ed1250; 
-  font-size: 1.0em; 
-  border-radius: 4px; 
-  width: 150px; 
+  border: 1px solid #ed1250;
+  font-size: 1.0em;
+  border-radius: 4px;
+  width: 150px;
   height: 30px;
   cursor: pointer;
 }
@@ -613,10 +615,11 @@ header {
 .info_blog p {
   line-height: 1.7;
 }
+
 .info_blog a {
   text-decoration: none;
   position: relative;
-  color: black; 
+  color: black;
 }
 
 .info_blog a::after {
@@ -624,7 +627,7 @@ header {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: black; 
+  background: black;
   bottom: 0;
   left: 0;
   transform: scaleX(0);
@@ -636,8 +639,89 @@ a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 .info_blog a {
   color: #ed1250;
   font-weight: 500;
 
+}
+
+/*Aqui empieza Seccion de Clientes*/
+
+.container_client {
+  width: 100%;
+
+}
+
+.container_client h1 {
+  font-size: 50px;
+  color: #ED1250;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.container_items {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.container_items_ul {
+  box-sizing: border-box;
+  display: flex;
+  width: max-content;
+  overflow: auto;
+
+}
+
+
+.container_items ul {
+  display: flex;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+}
+
+.items_client {
+  width: 300px;
+  height: 150px;
+  padding-left: 0;
+  margin-left: 0;
+  overflow: hidden;
+  margin-right: 20px;
+  border: solid;
+
+}
+
+.items_client img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.client_button {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.client_button button {
+  width: 80px;
+  height: 10px;
+  margin: 10px;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0;
+  background-color: #d6dbdf;
+}
+.client_button button:hover{
+
+  background-color:#aeb6bf  ;
 }
