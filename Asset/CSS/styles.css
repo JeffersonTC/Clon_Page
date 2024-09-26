@@ -669,6 +669,7 @@ a:hover::after {
   height: 300px;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 
 }
 
@@ -723,4 +724,168 @@ a:hover::after {
 
 .client_button button:hover {
   background-color: #aeb6bf;
+}
+
+/*Aqui empieza los estilos de la seccion de contatos*/
+.img_figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+
+}
+
+.img_figure img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+
+}
+
+.container_contact{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.container_contact_2 {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+
+}
+
+.btn_logo {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+
+.btn_logo img {
+  display: flex;
+  margin: auto;
+
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  left: 40px;
+  margin: 10px;
+  align-items: center;
+  border: solid transparent;
+  border-radius: 10px;
+  background-color: #ed1250;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: .5s ease all;
+
+}
+
+.btn p {
+  z-index: 20;
+  transition: 5s ease all;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn_logo a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #151434;
+  position: absolute;
+  right: 200px;
+  transition: .5s ease-in-out all;
+}
+
+.btn:hover::after {
+  right: 0;
+  transition: .5s ease all;
+}
+
+.btn_logo a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 100;
+  border: transparent;
+}
+
+.phone,
+.email,
+.location {
+  margin: 25px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone a {
+  text-decoration: none;
+  color: #151434;
+  margin-left: 15px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.email a {
+  text-decoration: none;
+  color: #151434;
+  margin-left: 15px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+
+}
+
+.location p {
+  margin-left: 15px;
+
+}
+
+.icon_decoration {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 7px;
+}
+
+.icon_decoration img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  color: #ffffff;
+  background-color: #ed1250;
+  justify-content: center;
+  display: flex;
+
+
+}
+
+footer p {
+  margin: auto;
+
 }
