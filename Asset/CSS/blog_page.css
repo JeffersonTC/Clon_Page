@@ -99,7 +99,7 @@ header {
   color: #fff;
 }
 
-/*Aqui Empieza los estilos del blog*/
+/*------------------------------------Aqui Empieza los estilos del blog------------------------------------------*/
 .container_blog {
   display: flex;
   justify-content: space-around;
