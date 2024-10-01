@@ -10,18 +10,20 @@ body {
 
 header {
   width: 100%;
-  height: 20%;
   position: fixed;
   z-index: 100;
-  display: flex;
   background: linear-gradient(#151434, #302e72, #3e3b9a00);
+  display: flex;
+  overflow: hidden;
 }
 
 .logo {
-  margin: 50px 10px;
+
   position: relative;
   left: 50px;
   right: 50px;
+  margin-right: 10px;
+  top: 10px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -31,7 +33,7 @@ header {
 
 #logo_image {
   position: relative;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   background-size: contain;
   background-position: center;
@@ -49,9 +51,9 @@ header {
 .titulo {
   display: block;
   position: relative;
-  left: 40px;
-  top: 40px;
-  margin: 10px;
+  left: 50px;
+  top: 20px;
+  margin-bottom: 10px;
   color: #fff;
 }
 
@@ -60,27 +62,25 @@ header {
 }
 
 .nav_menu {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 1em;
   align-items: center;
-
 
 }
 
 .nav_menu ul {
   display: flex;
   padding: 0;
-  justify-content: flex-end;
   align-items: center;
   position: relative;
-  left: 400px;
-  top: 30px;
+  left: 450px;
+  top: 10px;
+  padding: 20px;
 }
 
 .nav_menu li {
-  display: inline-block;
+  display: flex;
   padding: 1rem;
   text-decoration: none;
   color: black;
@@ -99,6 +99,23 @@ header {
   color: #fff;
 }
 
+/*-------------------------------------- --------Boton resposive-------------------------------------------------*/
+
+.check_btn {
+  position: absolute;
+  width: 100%;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.check_btn {
+  flex-direction: row;
+  display: none;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
 .carrusel {
   display: flex;
   overflow-x: scroll;
@@ -134,6 +151,7 @@ header {
   opacity: .75;
   transition: opacity ease 250ms;
 }
+
 /*------------------------------Seccion de servicio---------------------------------------------------*/
 /*estas son las cartas con efecto 3d*/
 .service_title {
@@ -255,11 +273,11 @@ header {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  background-color: #ffffff ;
-  border: 1px solid #ED1250 ;
+  background-color: #ffffff;
+  border: 1px solid #ED1250;
   cursor: pointer;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out ;
-  text-transform: uppercase ;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  text-transform: uppercase;
 }
 
 .btn::after {
@@ -287,7 +305,7 @@ header {
 }
 
 .btn:hover a {
-  color: #ffffff ;
+  color: #ffffff;
 }
 
 /*----------------------------------Aqui empieza la seccion de nosotros------------------------------------------*/
@@ -745,13 +763,14 @@ a:hover::after {
 
 }
 
-.container_contact{
+.container_contact {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
+
 .container_contact_2 {
   width: 100%;
   height: 350px;
