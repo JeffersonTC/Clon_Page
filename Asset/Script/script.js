@@ -41,3 +41,14 @@ startAutoplay(10000);
 document.querySelectorAll('.nav-button').forEach(button => {
     button.addEventListener('click', stopAutoplay);
 });
+
+/*JS MENU RESPOSIVO*/document.querySelector('.checkbtn').addEventListener('click', function() {
+    const menu = document.querySelector('.nav_menu_responsive');
+    
+    // Toggle between hiding and showing the menu
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+});

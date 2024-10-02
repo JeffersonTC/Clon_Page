@@ -100,21 +100,154 @@ header {
 }
 
 /*-------------------------------------- --------Boton resposive-------------------------------------------------*/
-
-.check_btn {
+.checkbtn {
   position: absolute;
+  font-size: 30px;
+  color: #111;
+  cursor: pointer;
   width: 100%;
-  padding-right: 50px;
-  display: flex;
   justify-content: flex-end;
-  box-sizing: border-box;
+  border: solid;
+  right: 50px;
+  display: non;
+  padding-bottom: 15px;
+}
+
+#check {
+  display: none;
+}
+
+
+
+/*-------------------------------------------Menu de Navegeacion resposive--------------------------------------*/
+@media (max-width:2140px){
+  .nav_menu_responsive{
+    display: none;
+  }
+}
+@media (max-width: 1300px) {
+  .nav_menu ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    position: relative;
+    left: 300px;
+    top: 10px;
+    padding: 20px;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+  .nav_menu ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    position: relative;
+    left: 200px;
+    top: 10px;
+    padding: 20px;
+  }
+
+}
+/*-------------------------------------------------------------------------------------------------*/
+@media (max-width: 1080px) {
+
+  .nav_menu ul{
+    display: none;
+  }
+
+  .checkbtn {
+    position: absolute;
+    font-size: 40px;
+    color: #111;
+    cursor: pointer;
+    width: 40px;
+    justify-content: flex-end;
+    border: solid;
+    right: 50px;
+    display: block;
+    padding-bottom: 10px;
+
+  }
+
+  .checkbtn {
+    display: flex;
+    justify-content: center;
+    bottom: 2px;
+
+  }
+
+  .nav_menu_responsive{
+    display: block;
+  }
+
+  .nav_menu_responsive{
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    transition: max-height 0.5s ease-in-out
+  }
+
+  
+  
+  .container_responsive_menu{
+    width: 400px;
+    height: 200px;
+    background-color: #151434;
+
+  }
+  .logo_responsive{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+    left: 30px;
+  }
+  .logo_responsive img {
+    width: 100%;
+  }
+.titulo_responsive{
+  position: relative;
+  left: 100px;
+  color: #ffffff;
   font-size: 30px;
 }
 
-.check_btn {
-  flex-direction: row;
-  display: none;
+.nav_menu_responsive ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  
 }
+.nav_menu_responsive li{
+  margin: 20px;
+  font-size: 20px;
+
+}
+.nav_menu_responsive li>a{
+  text-decoration: none;
+  color: #111;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
 /*---------------------------------------------------------------------------------------------------------------*/
 .carrusel {
   display: flex;
