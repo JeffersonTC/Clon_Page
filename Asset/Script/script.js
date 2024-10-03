@@ -39,16 +39,25 @@ startAutoplay(10000);
 
 // Opcional: Detener autoplay cuando el usuario interactúa con los botones de navegación.
 document.querySelectorAll('.nav-button').forEach(button => {
-    button.addEventListener('click', stopAutoplay);
+   button.addEventListener('click', stopAutoplay);
 });
 
-/*JS MENU RESPOSIVO*/document.querySelector('.checkbtn').addEventListener('click', function() {
-    const menu = document.querySelector('.nav_menu_responsive');
-    
-    // Toggle between hiding and showing the menu
-    if (menu.style.display === 'flex') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'flex';
-    }
+/*JS MENU RESPOSIVO
+document.querySelector('.checkbtn').addEventListener('click', function () {
+   const menu = document.querySelector('.nav_menu_responsive');
+
+   // Toggle between hiding and showing the menu
+   if (menu.style.display === 'flex') {
+      menu.style.display = 'none';
+   } else {
+      menu.style.display = 'flex';
+   }
+});
+*/
+
+document.querySelector('.checkbtn').addEventListener('click', function() {
+   const menu = document.querySelector('.nav_menu_responsive');
+   
+   // Alterna la clase 'active' para mostrar u ocultar el menú
+   menu.classList.toggle('active');
 });
