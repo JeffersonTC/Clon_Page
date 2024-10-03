@@ -19,6 +19,10 @@
 <body>
     <header>
         <nav class="nav_menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <div class="logo">
                 <a href="../index.html"><img id="logo_image"
                         src="../Asset/Imges/Servicios/Captura de pantalla 2024-07-30 101804.png" alt=""></a>
@@ -26,13 +30,6 @@
             <div class="titulo">
                 <h1 class="no-space">Autoproceso</h1>
                 <h6 class="no-space">servicio de ingenieria</h6>
-            </div>
-
-            <div class="check_btn">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
             </div>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -43,6 +40,29 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
+        <!--------------------Menu responsive------------------------------------>
+        <nav class="nav_menu_responsive">
+            <div class="container_responsive_menu">
+                <div class="logo_responsive">
+                    <a href="index.html"><img id="logo_image"
+                            src="../Asset/Imges/Inicio/Captura de pantalla 2024-07-30 101804.png" alt=""></a>
+                </div>
+                <div class="titulo_responsive">
+                    <h1 class="no-space">Autoproceso</h1>
+                    <h6 class="no-space">servicio de ingenieria</h6>
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicio.html">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
     </header>
     <div class="img_service">
         <img src="../Asset/Imges/Servicios/servicio img.png" id="img_btn">
@@ -400,6 +420,14 @@
         <div class="icon_decoration">
             <img src="../Asset/Imges/Servicios/AVector-Bp4wMedE.png" alt="">
         </div>
+
+
+
         <footer>
             <p>&#169 2024 Creado y Clonado por Jefferson Tovar</p>
         </footer>
+ 
+        <script src="../Asset/Script/servicio.js"></script>
+</body>
+
+</html>

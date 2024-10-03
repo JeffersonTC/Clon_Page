@@ -1,3 +1,13 @@
+/*-----------Funcionalidad del boton------------*/
+document.querySelector('.checkbtn').addEventListener('click', function() {
+    const menu = document.querySelector('.nav_menu_responsive');
+    
+    // Alterna la clase 'active' para mostrar u ocultar el menú
+    menu.classList.toggle('active');
+ });
+
+
+
 const carruselContainer = document.querySelector(".carrusel");
 let carruselItems = document.querySelectorAll(".carrusel-item");
 const buttons = document.querySelectorAll(".carrusel_nav button");
