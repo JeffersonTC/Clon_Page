@@ -14,7 +14,7 @@ header {
   z-index: 100;
   background: linear-gradient(#151434, #302e72, #3e3b9a00);
   display: flex;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -66,6 +66,7 @@ header {
   display: flex;
   padding: 1em;
   align-items: center;
+  box-sizing: border-box;
 
 }
 
@@ -136,6 +137,7 @@ header {
     left: 300px;
     top: 10px;
     padding: 20px;
+    box-sizing: border-box;
   }
 
 
@@ -197,8 +199,9 @@ header {
   }
 
   .nav_menu_responsive.active {
-    left: 0; /* Menú visible */
-}
+    left: 0;
+    /* Menú visible */
+  }
 
 
 
@@ -251,13 +254,197 @@ header {
 
 }
 
+/*-------------------------------------Responsive para dispositivos Moviles----------------------------------*/
+
+@media (max-width:450px) {
+
+  .logo {
+    position: relative;
+    left: 10px;
+    right: 10px;
+    margin-right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+
+  }
+
+  #logo_image {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+
+
+  .titulo {
+    display: block;
+    position: relative;
+    left: 10px;
+    top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .titulo h1 {
+    font-size: 25px;
+  }
+
+  .checkbtn {
+    position: absolute;
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 15px;
+    right: 20px;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .nav_menu_responsive {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    left: -500px;
+    transition: left 0.5s ease-in-out;
+  }
+
+  .container_responsive_menu {
+    width: 300px;
+    height: 150px;
+    background-color: #151434;
+
+  }
+
+  .logo_responsive {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    top: 45px;
+    left: 25px;
+  }
+
+  .titulo_responsive {
+    position: relative;
+    left: 70px;
+    color: #ffffff;
+    font-size: 25px;
+  }
+
+  /*------------------------BTN DE CARRUSEL-------------------*/
+  .carrusel_nav {
+    display: flex;
+    position: relative;
+    bottom: 300px !important;
+  }
+
+  /*----------------------btn Seccion de servicio----------------*/
 
 
 
 
 
 
+  /*------------Blog Responsivo---------------------------*/
+  .blog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
 
+  }
+
+  .container_blog {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    right: 60px;
+    box-sizing: border-box;
+    box-shadow: 0 9px 60px #08142c12;
+  }
+
+  .image_blog {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    max-width: 500px;
+  }
+
+  .image_blog img {
+    width: 100%;
+    height: 100%;
+    transition: .4s ease-in-out;
+  }
+
+  .info_blog {
+    padding: 30px;
+    height: 100%;
+  }
+
+
+  .info_blog h3 {
+    display: flex;
+    font-size: 25px;
+    color: #121;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .info_blog a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+    position: relative;
+  }
+
+  /*---------------Resposive de seccion de contactos------------*/
+
+  .icon_decoration {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 428px !important;
+  }
+
+  footer {
+    width: 100%;
+    height: 80px;
+    color: #ffffff;
+    background-color: #ed1250;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 420px;
+
+
+  }
+
+
+
+
+
+
+}
 
 /*---------------------------------------------------------------------------------------------------------------*/
 .carrusel {
@@ -309,6 +496,14 @@ header {
   color: #ED1250;
   font-weight: 600;
   margin-top: 100px;
+}
+
+.service{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .flip_container {
@@ -400,57 +595,67 @@ header {
   font-size: inherit;
 }
 
-.btn_container {
-  width: 100%;
-  height: 200px;
+
+.btn-logo_respon {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  box-sizing: border-box;
+
 }
 
-.btn {
+
+.btn-a_respon {
   width: 170px;
   height: 40px;
   margin: 10px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
   border-radius: 10px;
   background-color: #ffffff;
-  border: 1px solid #ED1250;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: .5s ease all;
+  color: #151434;
+  border: 1px solid #ed1250 ;
+  text-decoration: none;
+  font-weight: 400;
+
 }
 
-.btn::after {
+.btn-a_respon p {
+  z-index: 20;
+  transition: 0.1s ease all;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-logo_respon a::after {
   content: "";
   width: 100%;
   height: 100%;
   background-color: #151434;
   position: absolute;
   right: 200px;
-  transition: 0.5s ease-in-out all;
-  z-index: 1;
+  transition: .5s ease-in-out;
+ 
 }
 
-.btn:hover::after {
+
+.btn-a_respon:hover {
+  color:#ffffff ;
+
+}
+
+.btn-a_respon:hover::after {
   right: 0;
+  transition: .5s ease all;
 }
 
-.btn a {
-  text-decoration: none;
-  color: #002;
-  font-size: 16px;
-  font-weight: 500;
-  z-index: 2;
-  transition: color 0.3s ease-in-out;
-}
-
-.btn:hover a {
-  color: #ffffff;
-}
 
 /*----------------------------------Aqui empieza la seccion de nosotros------------------------------------------*/
 .nosotros {
@@ -565,9 +770,10 @@ header {
 .productos {
   width: 100%;
   height: 100%;
-  border: solid;
   box-sizing: border-box;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
@@ -695,15 +901,124 @@ header {
 
 }
 
+/*--------------------------Boton de Productos--------------*/
+
+.btn-logo_productos {
+  display: flex;
+  justify-content: center ;
+  flex-direction: column;
+  margin: auto;
+  box-sizing: border-box;
+
+}
+
+
+.btn-a_productos {
+  width: 170px;
+  height: 40px;
+  margin: 10px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: .5s ease all;
+  color: #151434;
+  border: 1px solid #ed1250 ;
+  text-decoration: none;
+  font-weight: 400;
+  
+
+}
+
+.btn-a_productos p {
+  z-index: 20;
+  transition: 0.1s ease all;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-logo_productos a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #151434;
+  position: absolute;
+  right: 200px;
+  transition: .5s ease-in-out;
+ 
+}
+
+.btn-a_productos:hover {
+  color:#ffffff ;
+
+}
+
+.btn-a_productos:hover::after {
+  right: 0;
+  transition: .5s ease all;
+}
+/*----------------------------------Aqui empieza la seccion de nosotros------------------------------------------*/
+.nosotros {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #FFFFFF 10%, #E7E8EB);
+}
+
+.container_nosotros {
+  width: 600px;
+  height: 600px;
+  margin: 20px 20px;
+
+}
+
+.container_nosotros h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #ed1250;
+  margin: 0;
+  font-weight: 450;
+  text-transform: uppercase;
+
+}
+
+.container_nosotros p {
+  text-align: center;
+  font-size: 16px;
+  padding: 0 30px;
+  line-height: 1.7;
+
+}
+
+.container-central {
+  margin-top: 150px;
+}
+
+
+
+
 /*----------------------------------Aqui empieza los estilos del blog-------------------------------------------*/
 .blog {
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
 
 }
 
 .container_blog {
-  width: 600px;
+  max-width: 600px;
   height: 700px;
   margin-left: 60px;
   border-radius: 15px;
@@ -724,6 +1039,7 @@ header {
   width: 650px;
   height: 350px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 
@@ -807,6 +1123,68 @@ a:hover::after {
   font-weight: 500;
 
 }
+
+.btn-logo_blog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  box-sizing: border-box;
+
+}
+
+
+.btn-a_blog {
+  width: 170px;
+  height: 40px;
+  margin: 10px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: .5s ease all;
+  color: #151434;
+  border: 1px solid #ed1250 ;
+  text-decoration: none;
+  font-weight: 400;
+
+}
+
+.btn-a_blog p {
+  z-index: 20;
+  transition: 0.1s ease all;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-logo_blog a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #151434;
+  position: absolute;
+  right: 200px;
+  transition: .5s ease-in-out;
+ 
+}
+
+
+.btn-a_blog:hover {
+  color:#ffffff ;
+
+}
+
+.btn-a_blog:hover::after {
+  right: 0;
+  transition: .5s ease all;
+}
+
+
 
 /*-------------------------------------Aqui empieza Seccion de Clientes-----------------------------------------*/
 
@@ -921,6 +1299,7 @@ a:hover::after {
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
+  flex-wrap: wrap;
 
 }
 
@@ -928,7 +1307,6 @@ a:hover::after {
   width: 300px;
   height: 400px;
   overflow: hidden;
-  margin-top: 20px;
 }
 
 
@@ -985,6 +1363,13 @@ a:hover::after {
   cursor: pointer;
   z-index: 100;
   border: transparent;
+}
+
+.contenedor_icons {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
 }
 
 .phone,
